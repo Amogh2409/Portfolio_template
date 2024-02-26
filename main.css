@@ -1,9 +1,9 @@
-body{
+body {
     background-color: black;
-    color: rgba(226,235,255,0.8);
+    color: rgba(226, 235, 255, 0.8);
 }
 
-#landing{
+#landing {
     height: 100vh;
     background-image: url('https://images.unsplash.com/photo-1483982258113-b72862e6cff6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80');
     background-position: center;
@@ -13,18 +13,104 @@ body{
     z-index: -1;
 }
 
-#mainText{
+#mainText {
     margin-top: 30vh;
 }
 
-#intro{
+#intro {
     margin-top: 50px;
 }
 
-#work{
-    background-color: rgb(61,61,61);
+#work {
+    background-color: rgb(61, 61, 61);
 }
 
-#p1{
+#p1 {
     height: 350px;
+}
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.08);
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    z-index: 1;
+}
+.landing-container {
+    position: relative; /* Ensures proper stacking */
+    z-index: 0; /* Ensures landing content is above particles */
+}
+
+
+
+
+section#contact {
+    padding: 100px 0; /* Adjust padding as needed */
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+    background-image: url(https://unsplash.imgix.net/44/C3EWdWzT8imxs0fKeKoC_blackforrest.JPG?q=75&fm=jpg&auto=format&s=986aaa92169d4e97975fa66ebd60bafd);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff; /* Text color */
+    text-align: center; /* Center-align text */
+    background-blend-mode: color;
+}
+
+section#contact .section-heading {
+    margin-bottom: 50px; /* Adjust spacing */
+    color: #1ee2e7; /* Heading color */
+}
+
+section#contact .form-group {
+    margin-bottom: 30px; /* Adjust spacing */
+}
+
+section#contact .form-group input,
+section#contact .form-group textarea {
+    padding: 15px; /* Adjust input padding */
+    border-radius: 5px; /* Rounded corners for inputs */
+    border: none; /* Remove border */
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
+    color: #fff; /* Text color */
+    width: 100%; /* Full width */
+    max-width: 500px; /* Max width for better readability */
+    margin: 0 auto; /* Center-align inputs */
+}
+
+section#contact .form-group input:focus,
+section#contact .form-group textarea:focus {
+    outline: none; /* Remove outline on focus */
+    box-shadow: none; /* Remove box shadow on focus */
+}
+
+section#contact .form-group input::placeholder,
+section#contact .form-group textarea::placeholder {
+    color: #bbb; /* Placeholder text color */
+}
+
+section#contact .text-danger {
+    color: #e74c3c; /* Error text color */
+}
+
+section#contact .btn-xl {
+    padding: 15px 30px; /* Button padding */
+    border-radius: 5px; /* Rounded corners for button */
+    background-color: #1ee2e7; /* Button background color */
+    border: none; /* Remove button border */
+    color: #fff; /* Button text color */
+    transition: background-color 0.3s; /* Smooth transition */
+    display: inline-block; /* Ensures button behaves as inline element */
+    vertical-align: middle; /* Aligns button vertically with input fields */
+}
+
+section#contact .btn-xl:hover {
+    background-color: #17d0d5; /* Button background color on hover */
+}
+
+.form-group{
+    margin: 250;
 }
